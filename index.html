@@ -59,23 +59,35 @@
           <button onclick="openLogin()" type="text" class="a">check Appointment</button>
           </div>
             
-      
+  <div id="loginBox">
+  <!-- Close Button aligned to right -->
+  <div class="text-end">
+    <button onclick="closeLogin()" style="float:right; background: none;border: none;color: aliceblue;">X</button>
     
+  </div>
 
-    <div id="loginBox" style="display: none;">
-      <button onclick="closeLogin()" style="float:right;background: none;border: none;font-weight: bold;font-size: 20px;color:whitesmoke;">X</button>
-      <h2 style="color: rgb(249, 247, 251); text-align: center;text-decoration: underline;font-family:'Times New Roman', Times, serif;">YOUR APPOINTMENT</h2>
-       <div class="wrapper">
-        <p style="color:white;font-size:20px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Patient Name </p><input type="text" class="pol" style="padding:8px;" placeholder="NAME">
-        <p style="color:white;font-size: 20px;">Appointment Date</p><input type ="date" style=" border-color:azure;background-color: dodgerblue;padding:8px;font-size: 18px;border-radius:14px;outline:none;font-family:Arial, Helvetica, sans-serif;outline: none;color: aliceblue;">
-        <p style="color:white;font-size:20px;">Contact</p><input type="text" class="pol" style=" border-color:azure;padding:8px;"  placeholder="Contact">
-        <p style="color:white;font-size: 20px;">Address</p><input type="text" class="pol"  style=" border-color:azure; padding: 8px;" placeholder="Address">
-        
-         &NonBreakingSpace;
-         <div class="bton">
-        <button class="btn" style="border-color: beige;font-size:20px;background-color: dodgerblue;color: aliceblue;border-radius: 30px;justify-content: center;padding: 10px;">SUBMIT</button>
-        </div>
-      </div>
+  <h1 class="text-center text-white text-decoration-underline" style="font-family:'Times New Roman'; font-size: 22px;">YOUR APPOINTMENT</h1>
+
+  <div class="wrapper">
+    <label class="text-white mt-3" for="name">Patient Name</label>
+    <input type="text" id="name" class="pol" placeholder="NAME">
+
+    <label class="text-white mt-3" for="date">Appointment Date</label>
+    <input type="date" id="date" class="pol">
+
+    <label class="text-white mt-3" for="contact">Contact</label>
+    <input type="text" id="contact" class="pol" placeholder="Contact">
+
+    <label class="text-white mt-3" for="address">Address</label>
+    <input type="text" id="address" class="pol" placeholder="Address">
+
+    <div class="bton mt-4">
+      <button class="btn submit-btn w-100">SUBMIT</button>
+    </div>
+  </div>
+</div>
+
+
     
        
       
@@ -184,3 +196,42 @@
     <script src="script.js"></script>
 </body>
 </html>
+            
+       
+    
+
+  
+      
+        
+    
+    
+
+    
+      
+
+    
+
+
+
+
+
+
+
+
+
+ 
+   
+   
+    
+    
+    
+
+
+
+          
+      
+
+    
+
+     
+
